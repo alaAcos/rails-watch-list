@@ -19,4 +19,11 @@ class ListsController < ApplicationController
       render :new
     end
   end
+
+  private
+
+  def list_params
+    params.require(:list).permit(:name)
+  end
+
 end

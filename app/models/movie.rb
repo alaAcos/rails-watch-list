@@ -1,6 +1,6 @@
 class Movie < ApplicationRecord
-  has_many :bookmark
+  has_many :bookmarks
 
-  validates :tilte, uniqueness: true, length: { minimum: 1 }
-  validates :overview, uniqueness: true
+  validates :title, uniqueness: true, length: { minimum: 1 }
+  validates :overview, uniqueness: true, length: { minimum: 1 }
 end
